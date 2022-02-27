@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
-    <class>CamDialog</class>
-    <widget class="QDialog" name="CamDialog">
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
         <property name="geometry">
             <rect>
                 <x>0</x>
@@ -42,7 +42,7 @@
                         </string>
                     </property>
                     <property name="text">
-                        <string>Back</string>
+                        <string>Open photo</string>
                     </property>
                 </widget>
                 <widget class="QPushButton" name="pushButton_2">
@@ -61,7 +61,7 @@
                         </string>
                     </property>
                     <property name="text">
-                        <string>Close Application</string>
+                        <string>Back</string>
                     </property>
                 </widget>
                 <widget class="QWidget" name="widget" native="true">

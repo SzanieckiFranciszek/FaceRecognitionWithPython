@@ -6,7 +6,7 @@ import numpy as np
 import sys
 import cv2
 
-face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('cascade_classifier/haarcascade_frontalface_default.xml')
 
 
 class CamStartFaceDetection(QThread):
@@ -21,7 +21,7 @@ class CamStartFaceDetection(QThread):
             for (x1, y1, x2, y2) in face_detect:
                 x_for_rectangle = x1 + x2
                 y_for_rectangle = y1 + y2
-                cv2.rectangle(frame, (x1, y2), (x_for_rectangle, y_for_rectangle), (0, 255, 0), 3)
+                cv2.rectangle(frame, (x1, y2), (x_for_rectangle, y_for_rectangle), (0, 255, 0), 2)
             if ret:
                 self.signal.emit(frame)
 
